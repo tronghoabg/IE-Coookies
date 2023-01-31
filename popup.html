@@ -3,40 +3,31 @@
 <head>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-
-    <div class="main">
-        <div class="row">
-			 <label style="display:none;margin-bottom: 3px;" id="DivFbIdCurrent">
-				<input hidden type='text' id='CurrentFbId' value='' style="width: 120px;padding: 2px 2px 2px 5px;"/>
-			</label>
-            <label style="display:block;margin-bottom: 3px;">Cookie :
-            </label>
-            <textarea id="id_text" rows="5" style="width:100%;word-break: break-all;"></textarea>
-            <div class="form-group mb-5" style="margin-bottom: 10px; margin-top: 5px">
-                <label style="display: flex; align-items: center; user-select: none"><input type="checkbox" style="margin-right: 10px" name="user-agent"/> User agent</label>
+    <body>
+        <div class="main">
+            <div class="row"></div>
+                <div class="title">
+                    IE Cookies
+                </div>
+                <label style="display:block;margin-bottom: 13px;">Domain :
+                    <input type="text" name="" id="domain" value="">
+                </label>
+                <label style="display:block;margin-bottom: 5px;">Current Cookie :
+                </label>
+                <textarea id="current_cookies" rows="5" style="width:100%;word-break: break-all;"></textarea>
+                <label style="display:block;margin-bottom: 5px;">Import Cookie :
+                </label>
+                <textarea id="cookies" rows="5" style="width:100%;word-break: break-all;"></textarea>
+                <div class="form-group mb-5" style="margin-bottom: 10px; margin-top: 5px">
+                <div class="group-btn">
+                    <button class="btn btn-h" type="button" id="id_button_login" value="Set">Import Cookies</button>
+                    <button id="btncookielogout" type="button" class="btn btn-h">Clear Cookies In Site</button>
+                </div>
             </div>
-            <label style="display:block;margin-bottom: 3px;">Token :
-            </label>
-            <textarea id="tokenResult2" rows="5" style="width:100%;word-break: break-all;"></textarea>
-            <p id="fb_id"></p>
-            <div class="loading-example"> </div>
-            <div class="group-btn">
-                <button class="btn btn-h" type="button" id="id_button_getAll" value="GetAll">Get Cookie</button>
-                <button class="btn btn-h" type="button" id="id_button_set" value="Set">Login Cookie</button>
             </div>
-		</div>
-		<img id="QRCode" style="width:100%;float:left;margin-bottom:5px;display:none;"/>
-		<div class="row">
-            <button id="btncookielogout" type="button" style="" class="btn btnLoginNew">Login new Facebook</button>
         </div>
-        <div id="list_cookie"></div>
-        <!-- <img src="/images/download.png" style="width: 24px;margin-right: 5px;vertical-align: bottom;"></a>
-		<a title="Download all cookie file" href="javascript:void(0)" id='btnDownloadCookie' style="color: #206eab;">
-            Download all cookie file
-        </a> -->
-    </div>
+    </body>
+    <script src="popup.js">
+    </script>
 
-    <script src="myscript.js"></script>
-</body>
 </html>

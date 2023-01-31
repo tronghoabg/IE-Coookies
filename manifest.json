@@ -1,22 +1,21 @@
 ﻿{
-  "name": "Fb Cookies",
+  "name": "IE Cookies",
   "version": "1.0",
   "manifest_version": 3,
-  "description": "Facebook cookies handler",
+  "description": "Import, Export cookies current site",
   "host_permissions": [
     "http://*/*",
     "https://*/*"
   ],
   "permissions": [
-    "cookies"
+    "cookies","tabs"
   ],
   "action": {
-    "default_title": "Facebook cookies handler",
+    "default_title": "IE Cookies",
     "default_popup": "popup.html",
     "default_icon":"icon/icon.png"
   },
   "icons": {
     "128": "icon/icon.png"
  }
-
 }

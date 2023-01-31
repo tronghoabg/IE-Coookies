@@ -19,38 +19,7 @@ body {
     border-radius: 3px;
     cursor: pointer;
 }
-#start_plus:hover {
-    background: #74C523;
-}
-#Stop_plus:hover {
-    background: #E46A56;
-}
-.btnLoginNew {
-    width: 250px;
-    -moz-box-shadow:inset 0px 39px 0px -24px #3954a4;
-    -webkit-box-shadow:inset 0px 39px 0px -24px #3954a4;
-    box-shadow:inset 0px 39px 0px -24px #3954a4;
-    background-color:#354f9c;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    border:1px solid #ffffff;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:15px;
-    padding:6px 15px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #b23e35;
-}
-.btnLoginNew:hover {
-    background-color:#3954a4;
-}
-.btnLoginNew:active {
-    position:relative;
-    top:1px;
-}
+
 .group-btn{
     display: flex;
     justify-content: center;
@@ -84,33 +53,6 @@ body {
     top:1px;
 }
 
-.btnSaveCookie {
-    -moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
-    -webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
-    box-shadow:inset 0px 39px 0px -24px #e67a73;
-    background-color:#e4685d;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    border-radius:4px;
-    border:1px solid #ffffff;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:15px;
-    padding:6px 15px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #b23e35;
-}
-.btnSaveCookie:hover {
-    background-color:#eb675e;
-}
-.btnSaveCookie:active {
-    position:relative;
-    top:1px;
-}
-
-
 .row {
     width: 100%;
     float: left;
@@ -126,30 +68,7 @@ label {
     padding: 10px;
     display: inline-block;
 }
-h4 {
-    font-size: 14px;
-    font-family: arial;
-    color: #DB4437;
-    border-bottom: solid 1px gainsboro;
-    padding-bottom: 6px;
-    margin: 0px 0px 10px 0;
-}
-.footer {
-    font-size: 12px;
-    width: 100%;
-    padding: 0px 10px 2px;
-    text-decoration: none;
-    background-color: #efefef;
-    border-top: solid 1px gainsboro;
-}
-.footer a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #999;
-}
-.footer a:hover {
-    color: #494949;
-}
+
 #list_cookie { max-height: 310px; overflow: auto;  margin-top: 1px; }
     #list_cookie .cc {
         font-size: 11px;
@@ -182,6 +101,18 @@ h4 {
         right: 0;
         top: 0;
 }
+.title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 14px;
+  background-color: #f0f2e3;
+  padding: 5px;
+  color: #0056a1;
+  border-radius: 5px;
+}
 #list_cookie .cc:hover .delete{
    display: inline-block;
 }
@@ -195,6 +126,7 @@ h4 {
 }
 textarea {
     resize: none;
+    font-size: 12px;
 }
 button{
     outline: none;
@@ -212,16 +144,6 @@ button{
     margin-bottom: 10px;
     display: none;
 }  
-  
-@-webkit-keyframes spin {  
-    0% { -webkit-transform: rotate(0deg); }  
-    100% { -webkit-transform: rotate(360deg); }  
-}  
-  
-@keyframes spin {  
-    0% { transform: rotate(0deg); }  
-    100% { transform: rotate(360deg); }  
-}
 .title-h{
     width: 100%;
     text-align: center;
@@ -239,12 +161,7 @@ button{
     text-transform: uppercase;
     box-sizing: border-box;
 }
-.autosave-c{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-}
+
 #list_cookie{
     display: block;
     width: 100%
